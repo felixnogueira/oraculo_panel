@@ -8,6 +8,7 @@ obj/
 *.user
 *.suo
 *.userprefs
+*.pubxml
 
 # Logs e arquivos temporários
 *.log
