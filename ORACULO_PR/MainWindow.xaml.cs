@@ -101,7 +101,7 @@ namespace ORACULO_PR
         // Resets the application state if the timer ticks outside of the showroom page.
         private void Timer_Tick(object sender, EventArgs e)
         {
-            if (!(MainFrame.Content is Showroom))
+            if (!(MainFrame.Content is Showroom) && !(MainFrame.Content is StartPage))
             {
                 SharedTimer.Stop();
                 NavigateWithLoading(new StartPage());
