@@ -1,0 +1,388 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <WebView2UseWinRT>False</WebView2UseWinRT>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Platforms>x64</Platforms>
+	<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+	<SelfContained>true</SelfContained>
+	<PublishSingleFile>true</PublishSingleFile>
+	  <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
+	  <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+
+
+  </PropertyGroup>
+
+  <!--<ItemGroup>
+    <None Remove="01_Tela Bem-Vindo.jpg" />
+    <None Remove="02A_Linha do Tempo_Inicial.jpg" />
+    <None Remove="02B_Linha do Tempo.png" />
+    <None Remove="02CA_2012.jpg" />
+    <None Remove="02CA_2012.png" />
+    <None Remove="02CB_2013.jpg" />
+    <None Remove="02CB_2013.png" />
+    <None Remove="02CC_2014.jpg" />
+    <None Remove="02CC_2014.png" />
+    <None Remove="02CD_2015.jpg" />
+    <None Remove="02CD_2015.png" />
+    <None Remove="02CE_2016.jpg" />
+    <None Remove="02CE_2016.png" />
+    <None Remove="02CF_2017.jpg" />
+    <None Remove="02CF_2017.png" />
+    <None Remove="02CG_2018.jpg" />
+    <None Remove="02CG_2018.png" />
+    <None Remove="02CH_2019.jpg" />
+    <None Remove="02CH_2019.png" />
+    <None Remove="02CI_2020.jpg" />
+    <None Remove="02CI_2020.png" />
+    <None Remove="02CJ_2021.jpg" />
+    <None Remove="02CJ_2021.png" />
+    <None Remove="02CK_2022.jpg" />
+    <None Remove="02CK_2022.png" />
+    <None Remove="02CL_2023.jpg" />
+    <None Remove="02CL_2023.png" />
+    <None Remove="03_Nossos Produtos.jpg" />
+    <None Remove="04A_Aplicacoes com Robo_Capa.jpg" />
+    <None Remove="04A_Aplicações com Robô_Capa.jpg" />
+    <None Remove="04A_AplicaçΣes com Robô_Capa.jpg" />
+    <None Remove="04BA_Programacao Interativa-01.00_00_03_16.Quadro001.jpg" />
+    <None Remove="04BA_Programacao Interativa-01.00_00_03_16.Quadro001.png" />
+    <None Remove="04BA_Programacao Interativa-01.mp4" />
+    <None Remove="04BB_Programacao Interativa-02.00_00_03_17.Quadro001.jpg" />
+    <None Remove="04BB_Programacao Interativa-02.00_00_03_17.Quadro001.png" />
+    <None Remove="04BB_Programacao Interativa-02.mp4" />
+    <None Remove="04B_Programacao Interativa.jpg" />
+    <None Remove="04B_Programação Interativa.jpg" />
+    <None Remove="04B_Programaç╞o Interativa.jpg" />
+    <None Remove="04CA_Gemeo Digital-01.00_00_03_24.Quadro001.jpg" />
+    <None Remove="04CA_Gemeo Digital-01.00_00_03_24.Quadro001.png" />
+    <None Remove="04CA_Gemeo Digital-01.mp4" />
+    <None Remove="04CB_Gemeo Digital-02.00_00_03_25.Quadro001.jpg" />
+    <None Remove="04CB_Gemeo Digital-02.00_00_03_25.Quadro001.png" />
+    <None Remove="04CB_Gemeo Digital-02.mp4" />
+    <None Remove="04CC_Gemeo Digital-03.00_00_02_06.Quadro001.jpg" />
+    <None Remove="04CC_Gemeo Digital-03.00_00_02_06.Quadro001.png" />
+    <None Remove="04CC_Gemeo Digital-03.mp4" />
+    <None Remove="04C_Gemeo Digital.jpg" />
+    <None Remove="04DA_Montagem de Eletronicos-01.00_00_02_28.Quadro001.jpg" />
+    <None Remove="04DA_Montagem de Eletronicos-01.00_00_02_28.Quadro001.png" />
+    <None Remove="04DA_Montagem de Eletronicos-01.mp4" />
+    <None Remove="04DB_Montagem de Eletronicos-02.00_00_03_10.Quadro001.jpg" />
+    <None Remove="04DB_Montagem de Eletronicos-02.00_00_03_10.Quadro001.png" />
+    <None Remove="04DB_Montagem de Eletronicos-02.mp4" />
+    <None Remove="04DC_Montagem de Eletronicos-03.00_00_01_02.Quadro001.jpg" />
+    <None Remove="04DC_Montagem de Eletronicos-03.00_00_01_02.Quadro001.png" />
+    <None Remove="04DC_Montagem de Eletronicos-03.mp4" />
+    <None Remove="04DD_Montagem de Eletronicos-04.00_00_04_01.Quadro001.jpg" />
+    <None Remove="04DD_Montagem de Eletronicos-04.00_00_04_01.Quadro001.png" />
+    <None Remove="04DD_Montagem de Eletronicos-04.mp4" />
+    <None Remove="04D_Montagem de Eletronicos.jpg" />
+    <None Remove="04EA_Industria Alimenticia-01.00_00_04_01.Quadro001.jpg" />
+    <None Remove="04EA_Industria Alimenticia-01.00_00_04_01.Quadro001.png" />
+    <None Remove="04EA_Industria Alimenticia-01.mp4" />
+    <None Remove="04EB_Industria Alimenticia-02.00_00_02_20.Quadro001.jpg" />
+    <None Remove="04EB_Industria Alimenticia-02.00_00_02_20.Quadro001.png" />
+    <None Remove="04EB_Industria Alimenticia-02.mp4" />
+    <None Remove="04EC_Industria Alimenticia-03.00_00_03_10.Quadro001.jpg" />
+    <None Remove="04EC_Industria Alimenticia-03.00_00_03_10.Quadro001.png" />
+    <None Remove="04EC_Industria Alimenticia-03.mp4" />
+    <None Remove="04E_Industria Alimenticia.jpg" />
+    <None Remove="04FA_Industria Automotiva-01.00_00_01_13.Quadro001.jpg" />
+    <None Remove="04FA_Industria Automotiva-01.00_00_01_13.Quadro001.png" />
+    <None Remove="04FA_Industria Automotiva-01.mp4" />
+    <None Remove="04FB_Industria Automotiva-02.00_00_01_29.Quadro001.jpg" />
+    <None Remove="04FB_Industria Automotiva-02.00_00_01_29.Quadro001.png" />
+    <None Remove="04FB_Industria Automotiva-02.mp4" />
+    <None Remove="04F_Industria Automotiva.jpg" />
+    <None Remove="04GA_Industria Farmaceutica-01.00_00_01_16.Quadro001.jpg" />
+    <None Remove="04GA_Industria Farmaceutica-01.00_00_01_16.Quadro001.png" />
+    <None Remove="04GA_Industria Farmaceutica-01.mp4" />
+    <None Remove="04GB_Industria Farmaceutica-02.00_00_03_25.Quadro001.jpg" />
+    <None Remove="04GB_Industria Farmaceutica-02.00_00_03_25.Quadro001.png" />
+    <None Remove="04GB_Industria Farmaceutica-02.mp4" />
+    <None Remove="04GC_Industria Farmaceutica-03.00_00_08_13.Quadro001.jpg" />
+    <None Remove="04GC_Industria Farmaceutica-03.00_00_08_13.Quadro001.png" />
+    <None Remove="04GC_Industria Farmaceutica-03.mp4" />
+    <None Remove="04G_Industria Farmaceutica.jpg" />
+    <None Remove="05_Redes Sociais e Cursos Online.jpg" />
+    <None Remove="06_Showroom.jpg" />
+    <None Remove="07_Showroom_touch.png" />
+    <None Remove="07_Site.jpg" />
+    <None Remove="Borda_Videos_Clean.png" />
+    <None Remove="play-button.png" />
+    <None Remove="play.png" />
+    <None Remove="Ripple-1s-200px.gif" />
+    <None Remove="Spinner-1s-500px.gif" />
+    <None Remove="VOLTARBTN.png" />
+  </ItemGroup>-->
+
+  <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.6.1" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2957.106" />
+    <PackageReference Include="System.IO" Version="4.3.0" />
+    <PackageReference Include="System.IO.Ports" Version="9.0.1" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\01_Tela Bem-Vindo.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\02A_Linha do Tempo_Inicial.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\02B_Linha do Tempo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\02CA_2012.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\02CB_2013.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\02CC_2014.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\02CD_2015.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\02CE_2016.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\02CF_2017.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\02CG_2018.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\02CH_2019.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\02CI_2020.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\02CJ_2021.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\02CK_2022.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\02CL_2023.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\03_Nossos Produtos.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04A_Aplicacoes com Robo_Capa.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04BA_Programacao Interativa-01.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04BA_Programacao Interativa-01.00_00_03_16.Quadro001.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04BA_Programacao Interativa-01.00_00_03_16.Quadro001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04BB_Programacao Interativa-02.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04BB_Programacao Interativa-02.00_00_03_17.Quadro001.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04BB_Programacao Interativa-02.00_00_03_17.Quadro001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04B_Programacao Interativa.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04CA_Gemeo Digital-01.00_00_03_24.Quadro001.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04CA_Gemeo Digital-01.00_00_03_24.Quadro001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04CA_Gemeo Digital-01.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04CB_Gemeo Digital-02.00_00_03_25.Quadro001.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04CB_Gemeo Digital-02.00_00_03_25.Quadro001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04CB_Gemeo Digital-02.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04CC_Gemeo Digital-03.00_00_02_06.Quadro001.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04CC_Gemeo Digital-03.00_00_02_06.Quadro001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04CC_Gemeo Digital-03.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04C_Gemeo Digital.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04DA_Montagem de Eletronicos-01.00_00_02_28.Quadro001.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04DA_Montagem de Eletronicos-01.00_00_02_28.Quadro001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04DA_Montagem de Eletronicos-01.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04DB_Montagem de Eletronicos-02.00_00_03_10.Quadro001.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04DB_Montagem de Eletronicos-02.00_00_03_10.Quadro001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04DB_Montagem de Eletronicos-02.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04DC_Montagem de Eletronicos-03.00_00_01_02.Quadro001.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04DC_Montagem de Eletronicos-03.00_00_01_02.Quadro001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04DC_Montagem de Eletronicos-03.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04DD_Montagem de Eletronicos-04.00_00_04_01.Quadro001.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04DD_Montagem de Eletronicos-04.00_00_04_01.Quadro001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04DD_Montagem de Eletronicos-04.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04D_Montagem de Eletronicos.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04EA_Industria Alimenticia-01.00_00_04_01.Quadro001.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04EA_Industria Alimenticia-01.00_00_04_01.Quadro001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04EA_Industria Alimenticia-01.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04EB_Industria Alimenticia-02.00_00_02_20.Quadro001.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04EB_Industria Alimenticia-02.00_00_02_20.Quadro001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04EB_Industria Alimenticia-02.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04EC_Industria Alimenticia-03.00_00_03_10.Quadro001.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04EC_Industria Alimenticia-03.00_00_03_10.Quadro001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04EC_Industria Alimenticia-03.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04E_Industria Alimenticia.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04FA_Industria Automotiva-01.00_00_01_13.Quadro001.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04FA_Industria Automotiva-01.00_00_01_13.Quadro001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04FA_Industria Automotiva-01.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04FB_Industria Automotiva-02.00_00_01_29.Quadro001.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04FB_Industria Automotiva-02.00_00_01_29.Quadro001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04FB_Industria Automotiva-02.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04F_Industria Automotiva.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04GA_Industria Farmaceutica-01.00_00_01_16.Quadro001.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04GA_Industria Farmaceutica-01.00_00_01_16.Quadro001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04GA_Industria Farmaceutica-01.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04GB_Industria Farmaceutica-02.00_00_03_25.Quadro001.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04GB_Industria Farmaceutica-02.00_00_03_25.Quadro001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04GB_Industria Farmaceutica-02.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04GC_Industria Farmaceutica-03.00_00_08_13.Quadro001.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04GC_Industria Farmaceutica-03.00_00_08_13.Quadro001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04GC_Industria Farmaceutica-03.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\04G_Industria Farmaceutica.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\05_Redes Sociais e Cursos Online.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\06_Showroom.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\07_Showroom_touch.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\07_Site.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Borda_Videos_Clean.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\play-button.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\play.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Ripple-1s-200px.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Spinner-1s-500px.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\VOLTARBTN.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

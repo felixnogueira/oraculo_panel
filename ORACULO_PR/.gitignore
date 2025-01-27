@@ -1,0 +1,26 @@
+# Arquivos e pastas específicas do projeto
+Resources/
+
+# Configurações do sistema e IDE
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userprefs
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+
+# Arquivos gerados por compiladores
+*.exe
+*.dll
+*.pdb
+
+# Configurações específicas do WebView2
+WebView2/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db

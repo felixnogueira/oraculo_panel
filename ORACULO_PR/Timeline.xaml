@@ -1,0 +1,124 @@
+﻿<UserControl x:Class="ORACULO_PR.Timeline"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ORACULO_PR"
+             mc:Ignorable="d" 
+                      d:DesignHeight="1080" d:DesignWidth="1920">
+    <Grid>
+        <Border Background="White" />
+        <Viewbox>
+            <Image x:Name="BgImgTL" Source="pack://siteoforigin:,,,/Resources/02A_Linha do Tempo_Inicial.jpg" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1000" />
+        </Viewbox>
+        <Viewbox>
+            <Grid Width="1920" Height="1080">
+
+                <Button x:Name="ScreenTouched" Opacity="0" Click="ScreenTouched_Click" Margin="0,320,0,316"/>
+                <Canvas x:Name="BtnScroll" VerticalAlignment="Center" Height="1080" Width="1080" IsManipulationEnabled="True" Background="Transparent" PreviewTouchDown="BtnScroll_PreviewTouchDown">
+                    <StackPanel CanHorizontallyScroll="True">
+                        <Image x:Name="TL" CacheMode="BitmapCache" d:Visibility="Collapsed" Height="1080" Source="pack://siteoforigin:,,,/Resources/02B_Linha do Tempo.png"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" IsManipulationEnabled="True" Background="Transparent"  VerticalAlignment="Center" CanHorizontallyScroll="True" Canvas.Top="400" Height="320" x:Name="BtnStack" >
+
+                        <Border HorizontalAlignment="Left" Width="100" />
+
+                        <Button x:Name="B2012" Width="240" Height="200" VerticalAlignment="Top" Opacity="0"  Click="Control_Click" TouchDown="Control_TouchDown" Tag="{Binding ElementName=C2012}" />
+                        <Button x:Name="B2013" Width="240" Height="210"  VerticalAlignment="Bottom"  Opacity="0" Click="Control_Click" TouchDown="Control_TouchDown" Tag="{Binding ElementName=C2013}"  />
+                        <Button x:Name="B2014" Width="230" Height="210" VerticalAlignment="Top"  Opacity="0"   Click="Control_Click" TouchDown="Control_TouchDown" Tag="{Binding ElementName=C2014}"  />
+                        <Button x:Name="B2015" Width="240" Height="210" VerticalAlignment="Bottom"  Opacity="0"  Click="Control_Click" TouchDown="Control_TouchDown"  Tag="{Binding ElementName=C2015}" />
+                        <Button x:Name="B2016" Width="240" Height="210" VerticalAlignment="Top" Opacity="0" Click="Control_Click" TouchDown="Control_TouchDown"  Tag="{Binding ElementName=C2016}" />
+                        <Button x:Name="B2017" Width="240" Height="210" VerticalAlignment="Bottom"  Opacity="0"  Click="Control_Click" TouchDown="Control_TouchDown"  Tag="{Binding ElementName=C2017}" />
+                        <Button x:Name="B2018" Width="230" Height="210" VerticalAlignment="Top"  Opacity="0" Click="Control_Click" TouchDown="Control_TouchDown"  Tag="{Binding ElementName=C2018}" />
+                        <Button x:Name="B2019" Width="235" Height="210" VerticalAlignment="Bottom"  Opacity="0"  Click="Control_Click" TouchDown="Control_TouchDown"  Tag="{Binding ElementName=C2019}" />
+                        <Button x:Name="B2020" Width="250" Height="210"  VerticalAlignment="Top" Opacity="0"  Click="Control_Click" TouchDown="Control_TouchDown" Tag="{Binding ElementName=C2020}" />
+                        <Button x:Name="B2021" Width="230" Height="210" VerticalAlignment="Bottom"  Opacity="0"  Click="Control_Click" TouchDown="Control_TouchDown" Tag="{Binding ElementName=C2021}" />
+                        <Button x:Name="B2022" Width="240" Height="210" VerticalAlignment="Top"  Opacity="0"  Click="Control_Click" TouchDown="Control_TouchDown" Tag="{Binding ElementName=C2022}" />
+                        <Button x:Name="B2023" Width="250" Height="210" VerticalAlignment="Bottom"  Opacity="0"  Click="Control_Click" TouchDown="Control_TouchDown" Tag="{Binding ElementName=C2023}" >
+                        </Button>
+                    </StackPanel>
+                </Canvas>
+               
+                <Canvas Width="1920" >
+                    <Image x:Name="C2012" HorizontalAlignment="Center" VerticalAlignment="Center" Height="1080" Source="pack://siteoforigin:,,,/Resources/02CA_2012.png" d:Visibility="Collapsed"/>
+
+                    <Image x:Name="C2013" HorizontalAlignment="Center" VerticalAlignment="Center" Height="1080" Source="pack://siteoforigin:,,,/Resources/02CB_2013.png" d:Visibility="Collapsed" />
+
+                    <Image x:Name="C2014" HorizontalAlignment="Center" VerticalAlignment="Center" Height="1080" Source="pack://siteoforigin:,,,/Resources/02CC_2014.png" d:Visibility="Collapsed" />
+
+                    <Image x:Name="C2015" HorizontalAlignment="Center" VerticalAlignment="Center" Height="1080" Source="pack://siteoforigin:,,,/Resources/02CD_2015.png" d:Visibility="Collapsed" />
+
+                    <Image x:Name="C2016" HorizontalAlignment="Center" VerticalAlignment="Center" Height="1080" Source="pack://siteoforigin:,,,/Resources/02CE_2016.png" d:Visibility="Collapsed" />
+
+                    <Image x:Name="C2017" HorizontalAlignment="Center" VerticalAlignment="Center" Height="1080" Source="pack://siteoforigin:,,,/Resources/02CF_2017.png" d:Visibility="Collapsed" />
+
+                    <Image x:Name="C2018" HorizontalAlignment="Center" VerticalAlignment="Center" Height="1080" Source="pack://siteoforigin:,,,/Resources/02CG_2018.png" d:Visibility="Collapsed" />
+
+                    <Image x:Name="C2019" HorizontalAlignment="Center" VerticalAlignment="Center" Height="1080" Source="pack://siteoforigin:,,,/Resources/02CH_2019.png" d:Visibility="Collapsed" />
+
+                    <Image x:Name="C2020" HorizontalAlignment="Center" VerticalAlignment="Center" Height="1080" Source="pack://siteoforigin:,,,/Resources/02CI_2020.png" d:Visibility="Collapsed" />
+
+                    <Image x:Name="C2021" HorizontalAlignment="Center" VerticalAlignment="Center" Height="1080" Source="pack://siteoforigin:,,,/Resources/02CJ_2021.png" d:Visibility="Collapsed" />
+
+                    <Image x:Name="C2022" HorizontalAlignment="Center" VerticalAlignment="Center" Height="1080" Source="pack://siteoforigin:,,,/Resources/02CK_2022.png" d:Visibility="Collapsed" />
+
+                    <Image x:Name="C2023" HorizontalAlignment="Center" VerticalAlignment="Center" Height="1080" Source="pack://siteoforigin:,,,/Resources/02CL_2023.png" d:Visibility="Collapsed" />
+                </Canvas>
+                <Button x:Name="TLBtn" BorderBrush="Transparent" Background="Transparent" Width="100" Height="60" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,25" Click="TLBtn_Click">
+                    <Image Source="pack://siteoforigin:,,,/Resources/VOLTARBTN.png" />
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="OverridesDefaultStyle" Value="True"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="{TemplateBinding Background}"
+             BorderBrush="{TemplateBinding BorderBrush}"
+             BorderThickness="{TemplateBinding BorderThickness}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Transparent"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button x:Name="TLBtn2" BorderBrush="Transparent" Background="Transparent" Width="100" Height="60" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,25" Click="TLBtn2_Click">
+                    <Image Source="pack://siteoforigin:,,,/Resources/VOLTARBTN.png" />
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="OverridesDefaultStyle" Value="True"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="{TemplateBinding Background}"
+             BorderBrush="{TemplateBinding BorderBrush}"
+             BorderThickness="{TemplateBinding BorderThickness}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Transparent"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+
+            </Grid>
+        </Viewbox>
+
+       
+
+    </Grid>
+</UserControl>
