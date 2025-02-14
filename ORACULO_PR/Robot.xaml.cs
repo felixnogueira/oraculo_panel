@@ -17,6 +17,7 @@ namespace ORACULO_PR
         {
             // Initialize components and set initial visibility states for pages and controls
             InitializeComponent();
+            SetupClickHandlers();
 
             // Show only the P1_Robot page, hide others
             SetPageVisibility(Visibility.Visible, P1_Robot);
@@ -168,19 +169,19 @@ namespace ORACULO_PR
         // RBbt1 Click handler
         private void RBbt1_Click(object sender, RoutedEventArgs e)
         {
-            PlayAndSetUI("04BA_Programacao Interativa-01.mp4", videoPI, RBbt1, IAl1Overlay, IAl2Overlay, IAl3Overlay);
+            PlayAndSetUI("Resources/04BA_Programacao Interativa-01.mp4", videoPI, RBbt1, IAl1Overlay, IAl2Overlay, IAl3Overlay);
         }
 
         // RBbt2 Click handler
         private void RBbt2_Click(object sender, RoutedEventArgs e)
         {
-            PlayAndSetUI("04BB_Programacao Interativa-02.mp4", videoPI, RBbt2, IAl1Overlay, IAl2Overlay, IAl3Overlay);
+            PlayAndSetUI("Resources/04BB_Programacao Interativa-02.mp4", videoPI, RBbt2, IAl1Overlay, IAl2Overlay, IAl3Overlay);
         }
 
         // Video GD Click handlers
-        private void Vid1GD_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("04CA_Gemeo Digital-01.mp4", videoGD, Vid1GD_On, GD1Overlay);
-        private void Vid2GD_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("04CB_Gemeo Digital-02.mp4", videoGD, Vid2GD_On, GD2Overlay);
-        private void Vid3GD_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("04CC_Gemeo Digital-03.mp4", videoGD, Vid3GD_On, GD3Overlay);
+        private void Vid1GD_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("Resources/04CA_Gemeo Digital-01.mp4", videoGD, Vid1GD_On, GD1Overlay);
+        private void Vid2GD_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("Resources/04CB_Gemeo Digital-02.mp4", videoGD, Vid2GD_On, GD2Overlay);
+        private void Vid3GD_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("Resources/04CC_Gemeo Digital-03.mp4", videoGD, Vid3GD_On, GD3Overlay);
 
         // Back button handlers (for navigating to previous pages)
         private void GD_Back_Click(object sender, RoutedEventArgs e) => GoBackToPage(Gemeo_Page);
@@ -199,24 +200,24 @@ namespace ORACULO_PR
         }
 
         // Vid1M to Vid4M Click handlers for Montagem Videos
-        private void Vid1M_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("04DA_Montagem de Eletronicos-01.mp4", videoMont, Vid1M_On, Mont1Overlay, Mont2Overlay, Mont3Overlay, Mont4Overlay);
-        private void Vid2M_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("04DB_Montagem de Eletronicos-02.mp4", videoMont, Vid2M_On, Mont1Overlay, Mont2Overlay, Mont3Overlay, Mont4Overlay);
-        private void Vid3M_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("04DC_Montagem de Eletronicos-03.mp4", videoMont, Vid3M_On, Mont1Overlay, Mont2Overlay, Mont3Overlay, Mont4Overlay);
-        private void Vid4M_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("04DD_Montagem de Eletronicos-04.mp4", videoMont, Vid4M_On, Mont1Overlay, Mont2Overlay, Mont3Overlay, Mont4Overlay);
+        private void Vid1M_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("Resources/04DA_Montagem de Eletronicos-01.mp4", videoMont, Vid1M_On, Mont1Overlay, Mont2Overlay, Mont3Overlay, Mont4Overlay);
+        private void Vid2M_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("Resources/04DB_Montagem de Eletronicos-02.mp4", videoMont, Vid2M_On, Mont1Overlay, Mont2Overlay, Mont3Overlay, Mont4Overlay);
+        private void Vid3M_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("Resources/04DC_Montagem de Eletronicos-03.mp4", videoMont, Vid3M_On, Mont1Overlay, Mont2Overlay, Mont3Overlay, Mont4Overlay);
+        private void Vid4M_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("Resources/04DD_Montagem de Eletronicos-04.mp4", videoMont, Vid4M_On, Mont1Overlay, Mont2Overlay, Mont3Overlay, Mont4Overlay);
 
         // Vid1F to Vid3F Click handlers for Farmaceutica Videos
-        private void Vid1F_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("04GA_Industria Farmaceutica-01.mp4", videoIF, Vid1F_On, IF1Overlay, IF2Overlay, IF3Overlay);
-        private void Vid2F_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("04GB_Industria Farmaceutica-02.mp4", videoIF, Vid2F_On, IF1Overlay, IF2Overlay, IF3Overlay);
-        private void Vid3F_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("04GC_Industria Farmaceutica-03.mp4", videoIF, Vid3F_On, IF1Overlay, IF2Overlay, IF3Overlay);
+        private void Vid1F_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("Resources/04GA_Industria Farmaceutica-01.mp4", videoIF, Vid1F_On, IF1Overlay, IF2Overlay, IF3Overlay);
+        private void Vid2F_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("Resources/04GB_Industria Farmaceutica-02.mp4", videoIF, Vid2F_On, IF1Overlay, IF2Overlay, IF3Overlay);
+        private void Vid3F_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("Resources/04GC_Industria Farmaceutica-03.mp4", videoIF, Vid3F_On, IF1Overlay, IF2Overlay, IF3Overlay);
 
         // Vid1Au to Vid2Au Click handlers for Automotiva Videos
-        private void Vid1Au_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("04FA_Industria Automotiva-01.mp4", videoIAu, Vid1Au_On, IAu1Overlay, IAu2Overlay);
-        private void Vid2Au_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("04FB_Industria Automotiva-02.mp4", videoIAu, Vid2Au_On, IAu1Overlay, IAu2Overlay);
+        private void Vid1Au_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("Resources/04FA_Industria Automotiva-01.mp4", videoIAu, Vid1Au_On, IAu1Overlay, IAu2Overlay);
+        private void Vid2Au_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("Resources/04FB_Industria Automotiva-02.mp4", videoIAu, Vid2Au_On, IAu1Overlay, IAu2Overlay);
 
         // Vid1Al to Vid3Al Click handlers for Alimenticia Videos
-        private void Vid1Al_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("04EA_Industria Alimenticia-01.mp4", videoIAl, Vid1Al_On, IAl1Overlay, IAl2Overlay, IAl3Overlay);
-        private void Vid2Al_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("04EB_Industria Alimenticia-02.mp4", videoIAl, Vid2Al_On, IAl1Overlay, IAl2Overlay, IAl3Overlay);
-        private void Vid3Al_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("04EC_Industria Alimenticia-03.mp4", videoIAl, Vid3Al_On, IAl1Overlay, IAl2Overlay, IAl3Overlay);
+        private void Vid1Al_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("Resources/04EA_Industria Alimenticia-01.mp4", videoIAl, Vid1Al_On, IAl1Overlay, IAl2Overlay, IAl3Overlay);
+        private void Vid2Al_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("Resources/04EB_Industria Alimenticia-02.mp4", videoIAl, Vid2Al_On, IAl1Overlay, IAl2Overlay, IAl3Overlay);
+        private void Vid3Al_On_Click(object sender, RoutedEventArgs e) => PlayAndSetUI("Resources/04EC_Industria Alimenticia-03.mp4", videoIAl, Vid3Al_On, IAl1Overlay, IAl2Overlay, IAl3Overlay);
 
         private void UpdateOverlay()
         {
